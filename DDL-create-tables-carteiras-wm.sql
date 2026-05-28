@@ -10,8 +10,7 @@ CREATE TABLE Fundo (
     CNPJFundo            VARCHAR(20)  NOT NULL,
     SubclasseFundo       VARCHAR(10),
     ClassificacaoFundo   VARCHAR(10)  NOT NULL,
-    PRIMARY KEY (IDFundo),
-    UNIQUE (CNPJFundo)
+    PRIMARY KEY (IDFundo)
 );
 
 CREATE TABLE Cliente (
@@ -31,8 +30,7 @@ CREATE TABLE Ativo (
     CNPJEmissor VARCHAR(20),
     DEN_SOC_EM  VARCHAR(100),
     ISIN        VARCHAR(20),
-    PRIMARY KEY (IDAtivo),
-    UNIQUE (CNPJEmissor)
+    PRIMARY KEY (IDAtivo)
 );
 
 CREATE TABLE Acao (
