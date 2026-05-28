@@ -1,0 +1,19 @@
+
+SET search_path = carteiras_wm;
+
+DROP TABLE IF EXISTS TempDataHolding;
+DROP TABLE IF EXISTS TempDataAtivo;
+DROP TABLE IF EXISTS TempDataFundo;
+DROP TABLE IF EXISTS Compromisso_Cliente;
+DROP TABLE IF EXISTS Carteira_Holding;
+DROP TABLE IF EXISTS Carteira_Fundo;
+DROP TABLE IF EXISTS Carteira_Cliente;
+DROP TABLE IF EXISTS ParticipacaoHolding;
+DROP TABLE IF EXISTS CotasFundo;
+DROP TABLE IF EXISTS Acao;
+DROP TABLE IF EXISTS Holding;
+DROP TABLE IF EXISTS Ativo;
+DROP TABLE IF EXISTS Cliente;
+DROP TABLE IF EXISTS Fundo;
+
+DROP SCHEMA IF EXISTS carteiras_wm;

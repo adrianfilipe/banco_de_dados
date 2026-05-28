@@ -1,0 +1,20 @@
+Cada Cliente tem um identificador único, um nome, um documento e um código (sigla do nome etc)
+Cada Fundo tem um identificador único, um CNPJ (não único para fundos com subclasse*), um nome, um total de cotas (que pode variar com o tempo), uma classificação (FIA, FIDC etc) e, opcionalmente, uma subclasse
+Cada Holding tem um identificador único, um CNPJ, um nome e um total de cotas/ações que pode variar com o tempo
+
+Cada Ativo tem um identificador único, uma descrição, um setor, um tipo, um preço (que pode variar com o tempo) e os seguintes atributos opcionais: denominação social do emissor, CNPJ do emissor, código ISIN
+Cada Ativo do tipo Ação tem um ticker e, opcionalmente, uma classificação (ordinária, preferencial)
+Cada Ativo do tipo Cotas de Fundo tem um CNPJ e, opcionalmente, subclasses
+Cada Ativo do tipo Participação em Holding tem um CNPJ
+
+Cada Cliente possui pelo menos um ativo em sua carteira, cada um com os seguinte atributos: quantidade, valor total, plataforma e gestora.
+Cada Holding possui pelo menos um ativo em sua carteira, cada um com os seguinte atributos: quantidade e valor total.
+Cada Fundo possui pelo menos um ativo em sua carteira, cada um com os seguinte atributos: quantidade e valor total.
+Cada registro da Carteira tem uma data e um identificador único.
+
+Cada Ativo do tipo Cotas de Fundo está associado a um fundo e cada fundo está associado a uma carteira diária de fundo.
+Cada Ativo do tipo Participação em Holding está associado a uma holding e cada holding está associada a uma carteira diária de holding.
+
+Todo Cliente pode ter um valor diário de Compromisso em Aberto referente a algum ativo
+
+*obs.: subclasses de fundos são tratados como fundos distintos
