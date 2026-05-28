@@ -1,0 +1,30 @@
+{
+  "name": "Stats Lab - R + Jupyter",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "REditorSupport.r",
+        "reditorsupport.r-lsp"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "jupyter.notebookFileRoot": "${workspaceFolder}",
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "forwardPorts": [8888],
+  "remoteUser": "vscode",
+  "remoteEnv": {
+    "R_LIBS_USER": "/home/vscode/R/library"
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh"
+}
